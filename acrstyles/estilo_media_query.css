@@ -1,0 +1,49 @@
+body{
+         margin: 0px;
+      }
+      .navegacion li{
+         display: inline;
+         margin: 0.5% 0.5%;
+      }
+      .navegacion a{
+         text-decoration: none;
+         border: blue 2px solid;
+         padding: 1% 2%;
+         background-color: cyan;
+      }
+      .navegacion a:hover{
+         
+         background: indigo;
+         color: gray;
+         border-color: gray;
+      }
+      @media screen and (max-width: 900px){
+         .navegacion li{
+            display: block;
+            margin: 10px;
+         }
+         .navegacion{
+            float: left;
+            height: 800px;
+            width: 30%;
+         }
+         .contenido{
+            width: 70%;
+         }
+         .navegacion ul{
+         padding-left: 5px;
+         }
+      }
+
+      h1{
+         display: none;
+      }
+
+      @media print{
+         h1{
+            display: block;
+         }
+         .navegacion{
+            display: none;
+         }
+      }
